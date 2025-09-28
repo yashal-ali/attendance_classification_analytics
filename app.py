@@ -202,8 +202,7 @@ def create_dashboard_metrics(df, employee_summary):
         'total_employees': total_employees,
         'total_present_days': total_present_days,
         'total_late_days': total_late_days,
-        'total_absent_days': total_absent_days,
-        'overall_attendance_rate': overall_attendance_rate,
+        'total_absent_days': total_absent_days
         'daily_attendance': daily_attendance,
         'performance_categories': employee_summary['performance_category'].value_counts()
     }
