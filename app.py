@@ -672,8 +672,6 @@ def main():
                     st.metric("Total Late Days", dashboard_metrics['total_late_days'])
                 with col4:
                     st.metric("Total Absent Days", dashboard_metrics['total_absent_days'])
-                with col5:
-                    st.metric("Overall Attendance Rate", f"{dashboard_metrics['overall_attendance_rate']}%")
                
                 # First row of charts
                 col1, col2 = st.columns(2)
