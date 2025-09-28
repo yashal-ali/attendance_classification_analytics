@@ -186,7 +186,6 @@ def create_dashboard_metrics(df, employee_summary):
     total_present_days = employee_summary['Total Present'].sum()
     total_late_days = employee_summary['Late'].sum() + employee_summary['Outstation Late'].sum()
     total_absent_days = employee_summary['Absent'].sum()
-    overall_attendance_rate = (total_present_days / (total_employees * employee_summary['Total Days'].max()) * 100).round(1)
    
     # Daily attendance trends
     df['date'] = pd.to_datetime(df['Attendance Date']).dt.date
